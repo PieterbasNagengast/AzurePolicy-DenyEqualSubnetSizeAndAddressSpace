@@ -23,5 +23,5 @@ If this policy is assigned:
 
 | Description | Bicep Template |
 |---|---|
-| Deploy to Azure Management Group| [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2FPieterbasNagengast%2FAzurePolicy-DenyEqualSubnetSizeAndAddressSpace%2Fmain%2FSubnetNotEqualToAddressSpace-MgmtGrp.json)|
-| Deploy to Azure Subscription | [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https%3A%2F%2Fraw.githubusercontent.com%2FPieterbasNagengast%2FAzurePolicy-DenyEqualSubnetSizeAndAddressSpace%2Fmain%2FSubnetNotEqualToAddressSpace-Sub.json)|
+| Deploy to Azure Management Group| [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FPieterbasNagengast%2FAzurePolicy-DenyEqualSubnetSizeAndAddressSpace%2Fmain%2FSubnetNotEqualToAddressSpace-MgmtGrp.json)|
+| Deploy to Azure Subscription | [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FPieterbasNagengast%2FAzurePolicy-DenyEqualSubnetSizeAndAddressSpace%2Fmain%2FSubnetNotEqualToAddressSpace-Sub.json)|
