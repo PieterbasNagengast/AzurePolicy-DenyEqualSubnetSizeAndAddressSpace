@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.4.613.9944",
-      "templateHash": "15892047782783136382"
+      "templateHash": "12934842099673763880"
     }
   },
   "functions": [],
@@ -25,29 +25,25 @@
         "parameters": {},
         "policyRule": {
           "if": {
-            "policyRule": {
-              "if": {
-                "allOf": [
-                  {
-                    "field": "type",
-                    "equals": "Microsoft.Network/virtualNetworks"
-                  },
-                  {
-                    "count": {
-                      "field": "Microsoft.Network/virtualNetworks/subnets[*]",
-                      "where": {
-                        "field": "Microsoft.Network/virtualNetworks/subnets[*].addressPrefix",
-                        "in": "[[field('Microsoft.Network/virtualNetworks/addressSpace.addressPrefixes[*]')]"
-                      }
-                    },
-                    "greater": 0
+            "allOf": [
+              {
+                "field": "type",
+                "equals": "Microsoft.Network/virtualNetworks"
+              },
+              {
+                "count": {
+                  "field": "Microsoft.Network/virtualNetworks/subnets[*]",
+                  "where": {
+                    "field": "Microsoft.Network/virtualNetworks/subnets[*].addressPrefix",
+                    "in": "[[field('Microsoft.Network/virtualNetworks/addressSpace.addressPrefixes[*]')]"
                   }
-                ]
+                },
+                "greater": 0
               }
-            },
-            "then": {
-              "effect": "deny"
-            }
+            ]
+          },
+          "then": {
+            "effect": "deny"
           }
         }
       }
