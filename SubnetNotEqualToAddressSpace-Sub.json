@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.4.613.9944",
-      "templateHash": "12934842099673763880"
+      "templateHash": "15721098904135661576"
     }
   },
   "functions": [],
@@ -22,7 +22,21 @@
         "metadata": {
           "Category": "Network"
         },
-        "parameters": {},
+        "parameters": {
+          "effect": {
+            "type": "String",
+            "metadata": {
+              "displayName": "Effect",
+              "description": "Enable or disable the execution of the policy."
+            },
+            "allowedValues": [
+              "audit",
+              "deny",
+              "disabled"
+            ],
+            "defaultValue": "deny"
+          }
+        },
         "policyRule": {
           "if": {
             "allOf": [
@@ -43,7 +57,7 @@
             ]
           },
           "then": {
-            "effect": "deny"
+            "effect": "[[parameters('effect')]"
           }
         }
       }
