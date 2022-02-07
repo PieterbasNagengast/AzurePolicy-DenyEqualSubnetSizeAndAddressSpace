@@ -1,4 +1,4 @@
-targetScope = 'subscription'
+targetScope = 'managementGroup'
 
 resource policy 'Microsoft.Authorization/policyDefinitions@2021-06-01' = {
   name: 'Deny VNETs that have equal subnet and address space size'
@@ -50,3 +50,5 @@ resource policy 'Microsoft.Authorization/policyDefinitions@2021-06-01' = {
     }
   }
 }
+
+output policyID string = policy.id

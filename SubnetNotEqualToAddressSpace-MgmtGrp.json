@@ -5,7 +5,7 @@
     "_generator": {
       "name": "bicep",
       "version": "0.4.613.9944",
-      "templateHash": "5993174250004830027"
+      "templateHash": "3771656020476450703"
     }
   },
   "functions": [],
@@ -62,5 +62,11 @@
         }
       }
     }
-  ]
+  ],
+  "outputs": {
+    "policyID": {
+      "type": "string",
+      "value": "[format('Microsoft.Authorization/policyDefinitions/{0}', 'Deny VNETs that have equal subnet and address space size')]"
+    }
+  }
 }
