@@ -8,7 +8,7 @@ resource policy 'Microsoft.Authorization/policyDefinitions@2021-06-01' = {
     displayName: 'Deny VNETs that have equal subnet and address space size'
     mode: 'All'
     metadata: {
-      'Category': 'Network'
+      'category': 'Network'
     }
     parameters: {
       'effect': {

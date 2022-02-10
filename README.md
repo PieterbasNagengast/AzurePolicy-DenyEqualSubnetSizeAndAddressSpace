@@ -1,3 +1,5 @@
+[![bicepBuild](https://github.com/PieterbasNagengast/AzurePolicy-DenyEqualSubnetSizeAndAddressSpace/actions/workflows/bicepBuild.yml/badge.svg)](https://github.com/PieterbasNagengast/AzurePolicy-DenyEqualSubnetSizeAndAddressSpace/actions/workflows/bicepBuild.yml)
+
 # Azure Policy: Deny VNETs that have equal subnet and address space size
 
 ## Description
