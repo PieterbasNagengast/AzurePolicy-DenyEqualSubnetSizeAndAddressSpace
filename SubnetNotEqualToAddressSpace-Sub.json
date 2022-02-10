@@ -20,7 +20,7 @@
         "displayName": "Deny VNETs that have equal subnet and address space size",
         "mode": "All",
         "metadata": {
-          "Category": "Network"
+          "category": "Network"
         },
         "parameters": {
           "effect": {
